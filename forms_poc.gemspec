@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version     = FormsPoc::VERSION
   spec.authors     = ["John de Robles"]
   spec.email       = ["jrbderobles@gmail.com"]
-  spec.homepage    = ""
+  spec.homepage    = "https://example.com"
   spec.summary     = "Summary of FormsPoc."
   spec.description = "Description of FormsPoc."
     spec.license     = "MIT"
@@ -15,12 +15,14 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://example.com"
+  spec.metadata["changelog_uri"] = "https://example.com"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
   spec.add_dependency "rails", ">= 7.0.4"
+
+  spec.add_dependency "mongoid"
 end
