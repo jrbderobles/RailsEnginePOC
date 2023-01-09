@@ -5,6 +5,6 @@ module FormsPoc
     field :name, type: String
     field :message, type: String
 
-    belongs_to :post
+    embedded_in :post
   end
 end
