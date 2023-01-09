@@ -3,6 +3,7 @@ PATH
   specs:
     forms_poc (0.1.0)
       mongoid
+      puma
       rails (>= 7.0.4)
 
 GEM
@@ -113,6 +114,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
+    puma (6.0.2)
+      nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.5)
     rack-test (2.0.2)
