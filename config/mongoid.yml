@@ -4,7 +4,7 @@ development:
     # Defines the default client. (required)
     default:
       # Mongoid can connect to a URI accepted by the driver:
-      uri: mongodb+srv://kairos-test:kairos-test@kairosforms.ipgokgp.mongodb.net/test
+      uri: mongodb+srv://kairos-test:kairos-test@kairosforms.ipgokgp.mongodb.net/forms
 
       # Otherwise define the parameters separately.
       # This defines the name of the default database that Mongoid can connect to.
@@ -176,6 +176,7 @@ development:
 test:
   clients:
     default:
+      uri: mongodb+srv://kairos-test:kairos-test@kairosforms.ipgokgp.mongodb.net/test
       database: dummy_test
       hosts:
         - localhost:27017

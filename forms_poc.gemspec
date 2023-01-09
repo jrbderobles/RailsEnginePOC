@@ -26,4 +26,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "mongoid"
   spec.add_dependency "puma"
+
+  spec.add_development_dependency "rspec-rails"
 end
