@@ -5,6 +5,6 @@ module FormsPoc
     field :title, type: String
     field :body, type: String
 
-    embeds_many :comments
+    has_many :comments, dependent: :destroy, inverse_of: :post
   end
 end
